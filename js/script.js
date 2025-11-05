@@ -14,13 +14,13 @@ btnElem.addEventListener("click", function () {
         opacityElem.classList.remove("opacita1")
         titleElem.classList.remove("lampada-accesa");
         titleElem.src = "./img/white_lamp.png"
-        btnElem.innerText = "Off";
+        btnElem.innerText = "Leva accendi luce📍";
     }
     else {
         opacityElem.classList.add("opacita1")
         titleElem.classList.add("lampada-accesa");
         titleElem.src = "./img/yellow_lamp.png"
-        btnElem.innerText = "On";
+        btnElem.innerText = "Leva spegni Luce📍";
     }
     isLight = !isLight
 });

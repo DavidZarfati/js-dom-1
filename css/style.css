@@ -62,3 +62,13 @@ body {
 .vibes {
     margin: 0 auto;
 }
+
+h2 {
+    color: white;
+}
+
+.leva {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+}
