@@ -24,3 +24,20 @@ btnElem.addEventListener("click", function () {
     }
     isLight = !isLight
 });
+
+const btnVibes = document.querySelector(".vibes")
+const lampadine = document.querySelectorAll(".giochi-di-luce img")
+
+btnVibes.addEventListener("click", function () {
+    lampadine.forEach((lampadina, index) => {
+        if (lampadina.classList.contains("lampadina-accesa")) {
+            lampadina.classList.remove("lampadina-accesa");
+            lampadina.classList.add("lampadina-spenta");
+            lampadina.src = "./img/white_lamp.png";
+        } else {
+            lampadina.classList.remove("lampadina-spenta");
+            lampadina.classList.add("lampadina-accesa");
+            lampadina.src = "./img/yellow_lamp.png";
+        }
+    });
+});
