@@ -1,5 +1,5 @@
 body {
-    background-color: aquamarine;
+    background-color: black;
 }
 
 .centro {
@@ -17,4 +17,31 @@ body {
 .lampada-spenta {
     width: 150px;
     height: 150px;
+    position: absolute;
+    left: 42%;
+    top: 10%;
+}
+
+.lampada-accesa {
+    position: absolute;
+    left: 39%;
+    top: 10%;
+}
+
+.bg-stanza {
+    background-image: url(../img/Vite-di-Foscarini.jpg);
+    background-size: cover;
+    height: 500px;
+    position: relative;
+    opacity: 0.1;
+}
+
+.interruttore {
+    position: absolute;
+    left: 0%;
+    bottom: 25%;
+}
+
+.opacita1 {
+    opacity: 1;
 }

@@ -2,20 +2,25 @@
 const btnElem = document.querySelector("button")
 // console.log(btnElem)
 const titleElem = document.querySelector("img")
-console.log(titleElem)
+// console.log(titleElem)
+const opacityElem = document.querySelector("div")
+// console.log(opacityElem)
 let isLight = false
 
 btnElem.addEventListener("click", function () {
-    isLight = btnElem.classList.contains("bg-red");
+    isLight = titleElem.classList.contains("lampada-accesa");
     if (isLight === true) {
-        btnElem.classList.remove("bg-red");
+
+        opacityElem.classList.remove("opacita1")
+        titleElem.classList.remove("lampada-accesa");
         titleElem.src = "./img/white_lamp.png"
-        btnElem.innerText = "prova a cliccarmi di nuovo";
+        btnElem.innerText = "Off";
     }
     else {
-        btnElem.classList.add("bg-red");
+        opacityElem.classList.add("opacita1")
+        titleElem.classList.add("lampada-accesa");
         titleElem.src = "./img/yellow_lamp.png"
-        btnElem.innerText = "cliccami,cliccami,cliccami";
+        btnElem.innerText = "On";
     }
     isLight = !isLight
 });
